@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Ahmed Khelili">
+    <title>Budget App</title>
+    <link rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main>
+        <section id="top">
+            <div class="bg"></div>
+            <h3>Availabe Budget in <span class="display-date">%Month%</span></h3>
+            <h1 id="display-budget">+ 2,500</h1>
+            <div class="display-income">
+                <h2 class="income-expences-title" id="first-title">Income</h2>
+                <h2 class="income-label">+ 2,500</h2>
+                <h2></h2>
+            </div>
+            <div class="display-expences">
+                <h2 class="income-expences-title">Expenses</h2>
+                <h2 class="expense-label">- 1,000</h2>
+                <h2><strong class="percentage-label">45%</strong></h2>
+            </div>
+        </section>
+
+        <section id="bottom">
+            <div class="add-remove-value">
+                <form>
+                    <label for="select"></label>
+                    <select name="select" id="select" class="browser-default custom-select">
+                        <option value="inc">+</option>
+                        <option value="exp">-</option>
+                    </select>
+
+                    <label for="description"></label>
+                    <input type="text" id="description">
+
+                    <label for="value"></label>
+                    <input type="text" id="value" placeholder="value" onfocus="this.placeholder = ''" onblur="this.placeholder = 'value'">
+
+                    <button id="confirm">&#10004;</button>
+                    <!-- <svg viewBox="0 0 8 8"><use xlink:href="#check"></use></svg> -->
+                </form>
+            </div>
+            <div class="display-income-expences">
+                <div class="income">
+                    <h3>Income</h3>
+                    <div class="income-list">
+                        <!-- <div id="income--0" class="income-item">
+                            <div class="description">Salary</div>
+                            <div class="item--value">+ 2,100.000</div>
+                            <div class="item-delete">
+                                <button class="item--delete-btn"></button>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+                <div class="expences">
+                    <h3>Expenses</h3>
+                    <div class="expenses-list">
+                        <!-- <div id="expense--0" class="expense-item">
+                            <div class="description">Salary</div>
+                            <div class="item--value">- 2,100.000</div>
+                            <div class="item--percentage">10%</div>
+                            <div class="item-delete">
+                                <button class="item--delete-btn"></button>
+                            </div>
+                        </div> -->
+                    </div>
+                
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
